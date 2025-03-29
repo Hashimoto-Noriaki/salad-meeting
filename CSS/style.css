@@ -1,14 +1,15 @@
 /* コピペ*/
-.html {
+html {
     /*font-family: 'Dancing Script', cursive; */
     font-family: 'Noto Sans JP', sans-serif;
-    /*font-family: 'Poppings', sans-serif;*/
 }
+
+.pop {font-family: 'Poppings', sans-serif;}
 
 .container {
     width: 90%;
     max-width: 1120px;
-    background-color: green;
+    /* background-color: green; */
     margin: 0 auto;
     align-items:center;
     /* justify-content:space-between; */
@@ -19,5 +20,33 @@
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;//もし横並びでなくて縦並びにしなければいけないくらい横幅が狭くなった時、勝手に改行
-    /* align-items:center; */
+    /* align-items:center; */ */
+}
+
+/* ヘッター */
+header {
+    padding: 27px 0;
+}
+
+.logo {
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-0.04em;
+}
+
+.logo span {
+    color:#80BA4A;
+}
+
+.header_menu li {
+    margin-left:40px;
+}
+
+.header_menu li a {
+    transition: .3s;
+}
+
+.header_menu li a:hover {
+    color:#80BA4A;
+    transition: .3s;
 }
