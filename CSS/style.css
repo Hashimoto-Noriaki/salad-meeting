@@ -1,0 +1,23 @@
+/* コピペ*/
+.html {
+    /*font-family: 'Dancing Script', cursive; */
+    font-family: 'Noto Sans JP', sans-serif;
+    /*font-family: 'Poppings', sans-serif;*/
+}
+
+.container {
+    width: 90%;
+    max-width: 1120px;
+    background-color: green;
+    margin: 0 auto;
+    align-items:center;
+    /* justify-content:space-between; */
+    height:80px;
+}
+
+.flex {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;//もし横並びでなくて縦並びにしなければいけないくらい横幅が狭くなった時、勝手に改行
+    /* align-items:center; */
+}
