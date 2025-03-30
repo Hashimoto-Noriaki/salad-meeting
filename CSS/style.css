@@ -13,6 +13,7 @@ html {
     margin: 0 auto;
     align-items:center;
     /* justify-content:space-between; */
+    position:relative;
 }
 
 .flex {
@@ -48,4 +49,49 @@ header {
 .header_menu li a:hover {
     color:#80BA4A;
     transition: .3s;
+}
+
+/* メイン */
+#hero {
+    background-image:url(../images/hero.jpg);
+    background-position:center;
+    background-size:cover;
+    height:540px;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    margin-bottom:90px;
+    overflow:hidden;//ハミ出たとこはカットしろ
+}
+
+#hero::before {
+    content: '';
+    width:100%;
+    height:100%;
+    background-color:#000000;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.2;//20%透明
+    z-index:1;//重なり順のcss
+}
+
+.hero_inner {
+    z-index:2;
+    color:white;
+    /* background-color:green; */
+    width:100%;
+    text-align:center;
+}
+
+.hero_inner p {
+    font-size:20px;
+    font-weight:500;
+    margin-bottom:16px;
+}
+
+.hero_inner h1 {
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:30px;
 }
