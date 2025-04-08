@@ -50,6 +50,16 @@ header {
     transition: .3s;
 }
 
+//メディアクエリ　横幅が768px以下の場合、中に書いたCSSを適用　これはスマホ
+@media only screen and (max-width:768px) {
+    header .container {
+        justify-content:center;
+    }
+    .header_menu li {
+        margin:20px 16px 0;//上、左右、下
+    }
+}
+
 /* メイン */
 #hero {
     background-image:url(../images/hero.jpg);
@@ -93,6 +103,13 @@ header {
     font-size:32px;
     font-weight:700;
     margin-bottom:30px;
+}
+
+//メディアクエリ
+@media only screen and (max-width:768px){
+    #hero{height: 460px;}
+    .hero_inner p {font-size:15px;}
+    .hero_inner h1 {font-size:17px;}
 }
 
 /* コンセプト */
@@ -142,6 +159,22 @@ header {
     z-index:-1;
 }
 
+//メディアクエリ
+@media only screen and (max-width:768px){
+    #concept h3{
+        font-size:24px;
+        line-height:1.5;
+    }
+    .column-2 {
+        width:48%;
+    }
+    .text {
+        font-size:15px;
+        line-height:1.7;
+    }
+    .concept-img {margin-top:30px;}
+}
+
 /* サービス */
 #service {
     margin-bottom:120px;
@@ -170,6 +203,19 @@ header {
     margin-bottom:24px;
 }
 
+@media only screen and (max-width:768px){
+    .column-40 {
+        width:100%;
+        margin-bottom:30px;
+    }
+    .column-55 {
+        width:100%;
+    }
+    #service h3 {
+        font-size:17px;
+    }    
+}
+
 /* カンパニー */
 #company {
     margin-bottom:120px;
@@ -191,6 +237,12 @@ header {
     width:70%;
     padding:48px 0;
     border-bottom:solid 1px #D2ECBA;
+}
+
+@media only screen and (max-width:768px){
+    #company dl {
+        font-size:13px;
+    }
 }
 
 /* ボトム */
@@ -228,6 +280,14 @@ header {
     width:28%;
     height:270px;
     border-radius:20px;
+}
+
+@media only screen and (max-width:768px){
+    .column-a,.column-b,.column-c,.column-d {
+        width:48%;
+        height:140px;
+        margin:1px;
+    }
 }
 
 /* フッター */
